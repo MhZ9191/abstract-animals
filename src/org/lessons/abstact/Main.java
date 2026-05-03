@@ -18,18 +18,16 @@ public class Main {
     System.out.println(willy.mangia());
     willy.dormi();
 
-    //IMPLEMENTO METODI MAIN
-    Main main = new Main();
-    main.faiNuotare(willy);
-    main.faiVolare(gino);
-    main.faiVolare(cip);
+    faiNuotare(willy);
+    faiVolare(gino);
+    faiVolare(cip);
 }
 
-public void faiVolare(Vola animale){
+public static void faiVolare(Vola animale){
     animale.vola();
 }
 
-public void faiNuotare(Nuota animale){
+public static void faiNuotare(Nuota animale){
     animale.nuota();
 }
 

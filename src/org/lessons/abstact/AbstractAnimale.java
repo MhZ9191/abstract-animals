@@ -1,10 +1,10 @@
 package org.lessons.abstact;
 
-public abstract class Animale {
+public abstract class AbstractAnimale {
 
     private String name;
 
-    public Animale(String name){
+    public AbstractAnimale(String name){
         this.name=name;
     }
 

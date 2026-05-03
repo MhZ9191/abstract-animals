@@ -1,6 +1,6 @@
 package org.lessons.abstact;
 
-public class Cane extends Animale{
+public class Cane extends AbstractAnimale{
     
     private String taglia;
 
@@ -21,10 +21,12 @@ public class Cane extends Animale{
         this.taglia=taglia;
     }
 
+    @Override
     public String verso(){
         return String.format("%s","Bauu!");
     }
 
+    @Override
     public String mangia(){
         return String.format("%s","Il cane è onnivoro con tendenza carnivora");
     }
