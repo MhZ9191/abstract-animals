@@ -1,4 +1,5 @@
 package org.lessons.abstact;
+import org.lessons.interfaces.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,8 +14,22 @@ public class Main {
     System.out.println(gino.mangia());
     gino.dormi();
 
-    Animale willy = new Delfino("willy");
+    Delfino willy = new Delfino("willy");
     System.out.println(willy.mangia());
     willy.dormi();
+
+    //IMPLEMENTO METODI MAIN
+    Main main = new Main();
+    main.faiNuotare(willy);
+    main.faiVolare(gino);
 }
+
+public void faiVolare(Vola animale){
+    animale.vola();
+}
+
+public void faiNuotare(Nuota animale){
+    animale.nuota();
+}
+
 }

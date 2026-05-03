@@ -1,6 +1,8 @@
 package org.lessons.abstact;
 
-public class Passerotto extends Animale {
+import org.lessons.interfaces.Vola;
+
+public class Passerotto extends Animale implements Vola{
 
     public Passerotto(String name){
         super(name);
@@ -13,4 +15,9 @@ public class Passerotto extends Animale {
     public String mangia(){
         return String.format("%s","Il passerotto mangia principalmente semi, insetti e briciole");
     }
+
+    public void vola(){
+        System.out.println("Sto iniziando a volare!");
+    }
+
 }
