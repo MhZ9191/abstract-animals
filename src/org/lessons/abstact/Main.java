@@ -22,6 +22,7 @@ public class Main {
     Main main = new Main();
     main.faiNuotare(willy);
     main.faiVolare(gino);
+    main.faiVolare(cip);
 }
 
 public void faiVolare(Vola animale){
